@@ -1,0 +1,43 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android' version '1.6.21' // Asegúrate de usar una versión compatible
+    id 'com.google.gms.google-services' // Si estás usando servicios de Google, como Firebase
+}
+
+android {
+    namespace 'com.example.coffe_star'
+    compileSdkVersion 33 // Asegúrate de tener una versión compatible
+
+    defaultConfig {
+        applicationId "com.example.coffe_star"
+        minSdkVersion 21
+        targetSdkVersion 33
+        versionCode 1
+        versionName "1.0"
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.debug
+        }
+    }
+}
+
+dependencies {
+    implementation 'com.android.support:support-annotations:28.0.0'
+    implementation 'androidx.appcompat:appcompat:1.3.0'
+    implementation 'androidx.core:core-ktx:1.6.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'io.flutter:flutter_embedding_release:1.0.0' // Embedding para FlutterActivity
+    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.6.21'
+}

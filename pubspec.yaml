@@ -1,0 +1,38 @@
+name: coffe_star
+description: A new Flutter project.
+
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  mongo_dart: ^0.7.3
+  qr_flutter: ^4.0.0
+  google_maps_flutter: ^2.2.2
+  flutter_google_places: ^0.3.0
+  geolocator: ^8.2.0
+  package_info_plus: ^1.4.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/capuchino.jpg
+    - assets/expreso.jpg
+    - assets/latte.jpg
+    - assets/frape.jpg
+    - assets/americano.jpg
+    - assets/con_caramelo.jpg
+    - assets/cafe_helado.jpg
+    - assets/cafe_mocha.jpg
+    - assets/irlandes.jpg
+    - assets/descafeinado.jpg
+
